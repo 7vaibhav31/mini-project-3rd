@@ -29,7 +29,7 @@ export function RotatingGlobe() {
     // Create a rotating torus knot with gradient effect
     const geometry = new THREE.TorusKnotGeometry(1, 0.4, 100, 16);
     const material = new THREE.MeshPhongMaterial({
-      color: 0x1abc ce, // Cyan/Accent color
+      color: 0x1abcce,
       emissive: 0x1abcce,
       wireframe: false,
       shininess: 100,
@@ -41,7 +41,7 @@ export function RotatingGlobe() {
     // Add second rotating shape
     const geometry2 = new THREE.IcosahedronGeometry(0.8, 4);
     const material2 = new THREE.MeshPhongMaterial({
-      color: 0x3b82f6, // Secondary blue
+      color: 0x3b82f6,
       emissive: 0x3b82f6,
       wireframe: true,
       opacity: 0.3,
@@ -111,7 +111,9 @@ export function RotatingGlobe() {
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("resize", handleResize);
-      containerRef.current?.removeChild(renderer.domElement);
+      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
+        containerRef.current.removeChild(renderer.domElement);
+      }
       geometry.dispose();
       material.dispose();
       geometry2.dispose();
