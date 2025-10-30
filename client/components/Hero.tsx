@@ -1,4 +1,5 @@
 import { ArrowRight } from "lucide-react";
+import { RotatingGlobe } from "./RotatingGlobe";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
@@ -16,6 +17,11 @@ export function Hero() {
       {/* Animated gradient background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/5 dark:to-accent/5" />
+
+        {/* 3D Rotating Globe */}
+        <div className="absolute inset-0 h-full w-full opacity-40 dark:opacity-30">
+          <RotatingGlobe />
+        </div>
 
         {/* Animated grid background */}
         <div
