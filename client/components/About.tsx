@@ -64,7 +64,7 @@ export function About() {
           {processSteps.map((step, index) => {
             const Icon = step.icon;
             return (
-              <div
+              <Card3D
                 key={index}
                 className="group relative animate-fadeUp"
                 style={{ animationDelay: `${index * 100}ms` }}
@@ -96,7 +96,7 @@ export function About() {
                 {index < processSteps.length - 1 && (
                   <div className="hidden lg:block absolute -right-8 top-1/2 w-6 h-1 bg-gradient-to-r from-accent to-transparent" />
                 )}
-              </div>
+              </Card3D>
             );
           })}
         </div>
