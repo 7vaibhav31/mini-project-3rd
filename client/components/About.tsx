@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Download,
   Cpu,
@@ -7,6 +8,7 @@ import {
   Network,
 } from "lucide-react";
 import { Card3D } from "./Card3D";
+import { WorkflowModal } from "./WorkflowModal";
 
 const processSteps = [
   {
@@ -42,6 +44,8 @@ const processSteps = [
 ];
 
 export function About() {
+  const [selectedStep, setSelectedStep] = useState<number | null>(null);
+
   return (
     <section
       id="about"
@@ -66,11 +70,14 @@ export function About() {
             return (
               <Card3D
                 key={index}
-                className="group relative animate-fadeUp"
+                className="group relative animate-fadeUp cursor-pointer"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 {/* Card */}
-                <div className="relative p-8 rounded-2xl glass dark:glass-dark hover:shadow-lg transition-all duration-300 h-full border-gradient">
+                <div
+                  onClick={() => setSelectedStep(index + 1)}
+                  className="relative p-8 rounded-2xl glass dark:glass-dark hover:shadow-lg transition-all duration-300 h-full border-gradient hover:border-accent/50 active:scale-95"
+                >
                   {/* Number badge */}
                   <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full bg-gradient-to-r from-secondary to-accent flex items-center justify-center text-white font-bold text-sm">
                     {index + 1}
@@ -119,6 +126,16 @@ export function About() {
           </div>
         </div>
       </div>
+
+      {/* Workflow Modal */}
+      <WorkflowModal
+        isOpen={selectedStep !== null}
+        stepNumber={selectedStep || 1}
+        title=""
+        description=""
+        details={[]}
+        onClose={() => setSelectedStep(null)}
+      />
     </section>
   );
 }
