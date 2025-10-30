@@ -54,8 +54,16 @@ export function Dashboard() {
               </div>
 
               {/* CTA Button */}
+              {/*
+                DASHBOARD URL CONFIGURATION
+                Replace the href="#" below with your Streamlit dashboard URL.
+                Example: href="https://your-streamlit-app.streamlit.app"
+                The target="_blank" attribute will open the dashboard in a new tab.
+              */}
               <a
                 href="#"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-gradient-to-r from-secondary to-accent text-white font-semibold hover:shadow-xl hover:shadow-accent/50 transition-all duration-300 hover:scale-105 group"
               >
                 Open Dashboard
