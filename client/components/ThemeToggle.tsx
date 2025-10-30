@@ -14,13 +14,13 @@ export function ThemeToggle() {
   const toggleTheme = () => {
     const htmlElement = document.documentElement;
     const newIsDark = !isDark;
-    
+
     if (newIsDark) {
       htmlElement.classList.add("dark");
     } else {
       htmlElement.classList.remove("dark");
     }
-    
+
     setIsDark(newIsDark);
     localStorage.setItem("theme", newIsDark ? "dark" : "light");
   };

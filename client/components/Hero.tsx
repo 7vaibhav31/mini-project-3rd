@@ -16,7 +16,7 @@ export function Hero() {
       {/* Animated gradient background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/5 dark:to-accent/5" />
-        
+
         {/* Animated grid background */}
         <div
           className="absolute inset-0 opacity-20"
@@ -54,7 +54,9 @@ export function Hero() {
 
           {/* Subtext */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            AI-powered platform that detects cultural trends from social media in real-time. Analyze emerging patterns across Twitter and Reddit with advanced machine learning.
+            AI-powered platform that detects cultural trends from social media
+            in real-time. Analyze emerging patterns across Twitter and Reddit
+            with advanced machine learning.
           </p>
 
           {/* CTA Buttons */}

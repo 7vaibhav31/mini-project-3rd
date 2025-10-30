@@ -29,7 +29,9 @@ export function Footer() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-foreground mb-1">Email</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-1">
+                    Email
+                  </h3>
                   <a
                     href="mailto:m.7vansh31@gmail.com"
                     className="text-accent hover:text-secondary transition-colors"
@@ -49,7 +51,9 @@ export function Footer() {
                   </div>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold text-foreground mb-1">Phone</h3>
+                  <h3 className="text-lg font-bold text-foreground mb-1">
+                    Phone
+                  </h3>
                   <a
                     href="tel:+919625987878"
                     className="text-accent hover:text-secondary transition-colors"
@@ -73,8 +77,12 @@ export function Footer() {
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-foreground mb-2">Institution</h3>
-                <p className="text-foreground font-medium">IMS Engineering College</p>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  Institution
+                </h3>
+                <p className="text-foreground font-medium">
+                  IMS Engineering College
+                </p>
                 <p className="text-muted-foreground text-sm">
                   Department of CSE-AIML
                 </p>
@@ -91,7 +99,9 @@ export function Footer() {
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-foreground mb-2">Project Guide</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2">
+                  Project Guide
+                </h3>
                 <p className="text-foreground font-medium">Ms. Sonia Sharma</p>
                 <p className="text-muted-foreground text-sm">
                   Faculty Advisor, CSE-AIML Department

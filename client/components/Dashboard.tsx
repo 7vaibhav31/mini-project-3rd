@@ -7,10 +7,13 @@ export function Dashboard() {
         {/* Section Header */}
         <div className="text-center mb-16 space-y-4 animate-fadeUp">
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground">
-            Explore the Live <span className="text-accent">Trend Dashboard</span>
+            Explore the Live{" "}
+            <span className="text-accent">Trend Dashboard</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Dive into trending memes, topics, and insights visualized in real-time. Interact with our comprehensive dashboard to explore emerging patterns across social media platforms.
+            Dive into trending memes, topics, and insights visualized in
+            real-time. Interact with our comprehensive dashboard to explore
+            emerging patterns across social media platforms.
           </p>
         </div>
 
@@ -45,7 +48,8 @@ export function Dashboard() {
                   Real-time Trend Visualization
                 </p>
                 <p className="text-muted-foreground max-w-sm">
-                  Access comprehensive dashboards with interactive charts, clustering visualizations, and trend insights
+                  Access comprehensive dashboards with interactive charts,
+                  clustering visualizations, and trend insights
                 </p>
               </div>
 
@@ -60,18 +64,18 @@ export function Dashboard() {
 
               {/* Features List */}
               <div className="grid sm:grid-cols-3 gap-6 pt-8 w-full max-w-2xl">
-                {[
-                  "Interactive Charts",
-                  "Live Updates",
-                  "Trend Analytics",
-                ].map((feature, idx) => (
-                  <div
-                    key={idx}
-                    className="text-center p-4 rounded-lg bg-white/5 dark:bg-black/20 border border-border"
-                  >
-                    <p className="text-sm font-medium text-foreground">{feature}</p>
-                  </div>
-                ))}
+                {["Interactive Charts", "Live Updates", "Trend Analytics"].map(
+                  (feature, idx) => (
+                    <div
+                      key={idx}
+                      className="text-center p-4 rounded-lg bg-white/5 dark:bg-black/20 border border-border"
+                    >
+                      <p className="text-sm font-medium text-foreground">
+                        {feature}
+                      </p>
+                    </div>
+                  ),
+                )}
               </div>
             </div>
           </div>

@@ -1,4 +1,11 @@
-import { Download, Cpu, Zap, TrendingUp, BarChart3, Network } from "lucide-react";
+import {
+  Download,
+  Cpu,
+  Zap,
+  TrendingUp,
+  BarChart3,
+  Network,
+} from "lucide-react";
 
 const processSteps = [
   {
@@ -46,7 +53,8 @@ export function About() {
             How TrendLoom <span className="text-accent">Works</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our intelligent pipeline processes social media data through advanced AI models to identify emerging cultural trends
+            Our intelligent pipeline processes social media data through
+            advanced AI models to identify emerging cultural trends
           </p>
         </div>
 

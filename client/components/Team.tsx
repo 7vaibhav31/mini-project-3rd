@@ -36,7 +36,8 @@ export function Team() {
             Meet the <span className="text-accent">Team Behind TrendLoom</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            A dedicated team of developers, data scientists, and AI engineers building the future of trend detection
+            A dedicated team of developers, data scientists, and AI engineers
+            building the future of trend detection
           </p>
         </div>
 
@@ -62,7 +63,9 @@ export function Team() {
                   <h3 className="text-xl font-bold font-heading text-foreground">
                     {member.name}
                   </h3>
-                  <p className="text-sm text-accent font-medium">{member.role}</p>
+                  <p className="text-sm text-accent font-medium">
+                    {member.role}
+                  </p>
                 </div>
 
                 {/* Social Links */}

@@ -88,10 +88,10 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "fadeUp": "fadeUp 0.8s ease-out",
-        "fadeIn": "fadeIn 0.6s ease-out",
-        "slideUp": "slideUp 0.6s ease-out",
-        "glow": "glow 2s ease-in-out infinite",
+        fadeUp: "fadeUp 0.8s ease-out",
+        fadeIn: "fadeIn 0.6s ease-out",
+        slideUp: "slideUp 0.6s ease-out",
+        glow: "glow 2s ease-in-out infinite",
       },
       keyframes: {
         fadeUp: {

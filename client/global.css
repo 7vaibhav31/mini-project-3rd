@@ -118,7 +118,12 @@
     white-space: pre;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;
   }
@@ -151,13 +156,17 @@
 
   .border-gradient {
     @apply border border-transparent bg-clip-padding;
-    background-image: linear-gradient(#f5f5f5, #f5f5f5), linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+    background-image:
+      linear-gradient(#f5f5f5, #f5f5f5),
+      linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
 
   .dark .border-gradient {
-    background-image: linear-gradient(#1a1a2e, #1a1a2e), linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
+    background-image:
+      linear-gradient(#1a1a2e, #1a1a2e),
+      linear-gradient(135deg, var(--accent) 0%, var(--secondary) 100%);
     background-origin: border-box;
     background-clip: padding-box, border-box;
   }
@@ -175,7 +184,8 @@
   }
 
   @keyframes blob {
-    0%, 100% {
+    0%,
+    100% {
       transform: translate(0, 0) scale(1);
     }
     33% {
