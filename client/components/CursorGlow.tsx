@@ -40,7 +40,8 @@ export function CursorGlow() {
       ref={glowRef}
       className="fixed w-20 h-20 pointer-events-none hidden lg:block"
       style={{
-        background: "radial-gradient(circle, rgba(26, 188, 206, 0.3) 0%, rgba(26, 188, 206, 0) 70%)",
+        background:
+          "radial-gradient(circle, rgba(26, 188, 206, 0.3) 0%, rgba(26, 188, 206, 0) 70%)",
         borderRadius: "50%",
         filter: "blur(20px)",
         zIndex: 40,

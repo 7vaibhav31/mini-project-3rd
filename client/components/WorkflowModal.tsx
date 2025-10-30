@@ -11,7 +11,10 @@ interface WorkflowModalProps {
   onClose: () => void;
 }
 
-const stepDetails: Record<number, { title: string; description: string; details: string[] }> = {
+const stepDetails: Record<
+  number,
+  { title: string; description: string; details: string[] }
+> = {
   1: {
     title: "Collect Data",
     description: "Gather real-time data from Twitter and Reddit",
@@ -94,13 +97,13 @@ export function WorkflowModal({
       75,
       canvasRef.current.clientWidth / canvasRef.current.clientHeight,
       0.1,
-      1000
+      1000,
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
     renderer.setSize(
       canvasRef.current.clientWidth,
-      canvasRef.current.clientHeight
+      canvasRef.current.clientHeight,
     );
     renderer.setClearColor(0x000000, 0);
     canvasRef.current.appendChild(renderer.domElement);
@@ -120,7 +123,7 @@ export function WorkflowModal({
 
     particlesGeometry.setAttribute(
       "position",
-      new THREE.BufferAttribute(posArray, 3)
+      new THREE.BufferAttribute(posArray, 3),
     );
     const particlesMaterial = new THREE.PointsMaterial({
       size: 0.05,
@@ -164,7 +167,10 @@ export function WorkflowModal({
 
     // Cleanup
     return () => {
-      if (canvasRef.current && renderer.domElement.parentNode === canvasRef.current) {
+      if (
+        canvasRef.current &&
+        renderer.domElement.parentNode === canvasRef.current
+      ) {
         canvasRef.current.removeChild(renderer.domElement);
       }
       particlesGeometry.dispose();
@@ -241,7 +247,9 @@ export function WorkflowModal({
 
           {/* Details */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground mb-6">Key Points:</h3>
+            <h3 className="text-xl font-bold text-foreground mb-6">
+              Key Points:
+            </h3>
             {step.details.map((detail, idx) => (
               <div
                 key={idx}
@@ -251,7 +259,9 @@ export function WorkflowModal({
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white font-bold text-sm">
                   {idx + 1}
                 </div>
-                <p className="text-foreground leading-relaxed flex-1">{detail}</p>
+                <p className="text-foreground leading-relaxed flex-1">
+                  {detail}
+                </p>
               </div>
             ))}
           </div>
@@ -259,7 +269,8 @@ export function WorkflowModal({
           {/* Footer CTA */}
           <div className="mt-8 p-6 rounded-xl bg-gradient-to-r from-secondary/10 to-accent/10 border border-accent/30">
             <p className="text-muted-foreground mb-4">
-              This step is crucial for accurate trend detection and pattern recognition.
+              This step is crucial for accurate trend detection and pattern
+              recognition.
             </p>
             <button className="inline-flex items-center gap-2 px-6 py-2 rounded-lg bg-gradient-to-r from-secondary to-accent text-white font-semibold hover:shadow-lg hover:shadow-accent/50 transition-all duration-300">
               Learn More

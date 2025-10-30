@@ -6,7 +6,11 @@ interface FlipCardProps {
   className?: string;
 }
 
-export function FlipCard({ frontContent, backContent, className = "" }: FlipCardProps) {
+export function FlipCard({
+  frontContent,
+  backContent,
+  className = "",
+}: FlipCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
   return (

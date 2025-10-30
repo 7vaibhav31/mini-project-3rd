@@ -13,13 +13,13 @@ export function RotatingGlobe() {
       75,
       containerRef.current.clientWidth / containerRef.current.clientHeight,
       0.1,
-      1000
+      1000,
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
 
     renderer.setSize(
       containerRef.current.clientWidth,
-      containerRef.current.clientHeight
+      containerRef.current.clientHeight,
     );
     renderer.setClearColor(0x000000, 0);
     containerRef.current.appendChild(renderer.domElement);
@@ -111,7 +111,10 @@ export function RotatingGlobe() {
     return () => {
       window.removeEventListener("mousemove", onMouseMove);
       window.removeEventListener("resize", handleResize);
-      if (containerRef.current && renderer.domElement.parentNode === containerRef.current) {
+      if (
+        containerRef.current &&
+        renderer.domElement.parentNode === containerRef.current
+      ) {
         containerRef.current.removeChild(renderer.domElement);
       }
       geometry.dispose();
