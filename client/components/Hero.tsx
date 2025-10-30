@@ -38,12 +38,6 @@ export function Hero() {
       {/* Content */}
       <div className="container mx-auto px-4 max-w-4xl text-center relative z-10">
         <div className="space-y-8 animate-fadeUp">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 text-accent text-sm font-medium">
-            <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-            AI-Powered Trend Detection
-          </div>
-
           {/* Headline */}
           <h1 className="text-5xl md:text-7xl font-bold font-heading text-foreground leading-tight">
             Discover What's Trending{" "}
