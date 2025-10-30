@@ -61,8 +61,16 @@ export function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-8">
+            {/*
+              DASHBOARD URL CONFIGURATION
+              Replace the href="#" below with your Streamlit dashboard URL.
+              Example: href="https://your-streamlit-app.streamlit.app"
+              Make sure to use the target="_blank" attribute to open in a new tab.
+            */}
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-gradient-to-r from-secondary to-accent text-white font-semibold hover:shadow-lg hover:shadow-accent/50 transition-all duration-300 hover:scale-105"
             >
               View Dashboard
