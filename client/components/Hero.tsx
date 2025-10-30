@@ -42,7 +42,7 @@ export function Hero() {
           <h1 className="text-5xl md:text-7xl font-bold font-heading text-foreground leading-tight">
             Discover What's Trending{" "}
             <span className="bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
-              Before It Goes Viral
+              Right Now
             </span>
           </h1>
 
