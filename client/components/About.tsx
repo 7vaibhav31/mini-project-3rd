@@ -6,6 +6,7 @@ import {
   BarChart3,
   Network,
 } from "lucide-react";
+import { Card3D } from "./Card3D";
 
 const processSteps = [
   {
