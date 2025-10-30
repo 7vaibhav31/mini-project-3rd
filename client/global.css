@@ -195,4 +195,21 @@
       transform: translate(-20px, 20px) scale(0.9);
     }
   }
+
+  @keyframes floatUp {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .card-3d-hover {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card-3d-hover:hover {
+    transform: translateZ(20px);
+  }
 }
