@@ -117,4 +117,35 @@
     overflow-x: auto;
     white-space: pre;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+@layer utilities {
+  .fade-up {
+    @apply animate-fadeUp;
+  }
+
+  .glow-cyan {
+    box-shadow: 0 0 30px rgba(26, 188, 206, 0.5);
+  }
+
+  .glow-cyan-lg {
+    box-shadow: 0 0 60px rgba(26, 188, 206, 0.3);
+  }
+
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10;
+  }
 }
