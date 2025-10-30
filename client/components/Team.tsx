@@ -1,4 +1,5 @@
 import { Github, Linkedin } from "lucide-react";
+import { Card3D } from "./Card3D";
 
 const teamMembers = [
   {
