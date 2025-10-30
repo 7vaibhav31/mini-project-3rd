@@ -1,5 +1,6 @@
 import { Github, Linkedin } from "lucide-react";
 import { Card3D } from "./Card3D";
+import { Card3D } from "./Card3D";
 
 const teamMembers = [
   {
@@ -45,7 +46,7 @@ export function Team() {
         {/* Team Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {teamMembers.map((member, index) => (
-            <div
+            <Card3D
               key={index}
               className="group animate-fadeUp"
               style={{ animationDelay: `${index * 100}ms` }}
@@ -79,7 +80,7 @@ export function Team() {
                   </button>
                 </div>
               </div>
-            </div>
+            </Card3D>
           ))}
         </div>
       </div>
