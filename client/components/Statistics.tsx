@@ -89,7 +89,10 @@ export function Statistics() {
 
       <div className="container mx-auto px-4 max-w-6xl relative z-10">
         {/* Section Header */}
-        <div className="text-center mb-20 space-y-4 animate-fadeUp">
+        <div
+          className="text-center mb-20 space-y-4"
+          style={{ animation: "fadeUp 0.8s ease-out both" }}
+        >
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground">
             By The <span className="text-accent">Numbers</span>
           </h2>
