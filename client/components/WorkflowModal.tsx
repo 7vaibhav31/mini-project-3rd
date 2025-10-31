@@ -126,9 +126,11 @@ export function WorkflowModal({
       new THREE.BufferAttribute(posArray, 3),
     );
     const particlesMaterial = new THREE.PointsMaterial({
-      size: 0.05,
+      size: 0.15,
       color: 0x1abcce,
       sizeAttenuation: true,
+      emissive: 0x1abcce,
+      emissiveIntensity: 1,
     });
 
     const particles = new THREE.Points(particlesGeometry, particlesMaterial);
@@ -139,7 +141,9 @@ export function WorkflowModal({
     const cubeMaterial = new THREE.MeshPhongMaterial({
       color: 0x3b82f6,
       emissive: 0x1abcce,
+      emissiveIntensity: 1,
       wireframe: true,
+      linewidth: 2,
     });
     const cube = new THREE.Mesh(cubeGeometry, cubeMaterial);
     scene.add(cube);
