@@ -9,20 +9,8 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    label: "Trends Detected",
-    value: "50000",
-    prefix: "+",
-    suffix: "",
-  },
-  {
-    label: "Active Users",
-    value: "10000",
-    prefix: "+",
-    suffix: "",
-  },
-  {
     label: "Data Sources",
-    value: "2",
+    value: "4",
     prefix: "",
     suffix: "+",
   },

@@ -5,7 +5,6 @@ import { Features } from "@/components/Features";
 import { Statistics } from "@/components/Statistics";
 import { UseCases } from "@/components/UseCases";
 import { Dashboard } from "@/components/Dashboard";
-import { Testimonials } from "@/components/Testimonials";
 import { Team } from "@/components/Team";
 import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
@@ -41,7 +40,6 @@ export default function Index() {
       <About />
       <UseCases />
       <Dashboard />
-      <Testimonials />
       <Team />
       <Footer />
     </div>
