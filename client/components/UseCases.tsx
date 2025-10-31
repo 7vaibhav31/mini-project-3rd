@@ -8,7 +8,11 @@ const useCases = [
     subtitle: "Campaign Strategy",
     description:
       "Identify emerging trends early and adjust marketing campaigns in real-time for maximum impact and engagement.",
-    benefits: ["Trending insights", "Audience analysis", "Content optimization"],
+    benefits: [
+      "Trending insights",
+      "Audience analysis",
+      "Content optimization",
+    ],
   },
   {
     icon: Target,
@@ -141,8 +145,9 @@ export function UseCases() {
               Whatever your role, TrendLoom gives you insights that matter
             </p>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Our AI-powered platform adapts to your specific needs and use case,
-              providing actionable insights that drive decision-making and growth
+              Our AI-powered platform adapts to your specific needs and use
+              case, providing actionable insights that drive decision-making and
+              growth
             </p>
           </div>
         </div>

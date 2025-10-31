@@ -11,7 +11,9 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Contact Section */}
           <div style={{ animation: "fadeUp 0.8s ease-out both" }}>
-            <h3 className="text-lg font-bold font-heading text-foreground mb-6">Contact</h3>
+            <h3 className="text-lg font-bold font-heading text-foreground mb-6">
+              Contact
+            </h3>
             <div className="space-y-4">
               <a
                 href="mailto:m.7vansh31@gmail.com"
@@ -32,7 +34,9 @@ export function Footer() {
 
           {/* Links Section */}
           <div style={{ animation: "fadeUp 0.8s ease-out 100ms both" }}>
-            <h3 className="text-lg font-bold font-heading text-foreground mb-6">Links</h3>
+            <h3 className="text-lg font-bold font-heading text-foreground mb-6">
+              Links
+            </h3>
             <ul className="space-y-3">
               {[
                 { label: "Home", id: "home" },
@@ -58,9 +62,13 @@ export function Footer() {
 
           {/* Institution & Social Section */}
           <div style={{ animation: "fadeUp 0.8s ease-out 200ms both" }}>
-            <h3 className="text-lg font-bold font-heading text-foreground mb-6">Organization</h3>
+            <h3 className="text-lg font-bold font-heading text-foreground mb-6">
+              Organization
+            </h3>
             <p className="text-muted-foreground text-sm mb-4">
-              <span className="font-medium text-foreground">IMS Engineering College</span>
+              <span className="font-medium text-foreground">
+                IMS Engineering College
+              </span>
               <br />
               Department of CSE-AIML
             </p>
