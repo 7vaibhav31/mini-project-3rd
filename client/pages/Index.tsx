@@ -9,6 +9,7 @@ import { Team } from "@/components/Team";
 import { Footer } from "@/components/Footer";
 import { CursorGlow } from "@/components/CursorGlow";
 import { FloatingElements } from "@/components/FloatingElements";
+import { ScrollGradientBackground } from "@/components/ScrollGradientBackground";
 import { useEffect } from "react";
 
 export default function Index() {
@@ -29,6 +30,7 @@ export default function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Global Effects */}
+      <ScrollGradientBackground />
       <CursorGlow />
       <FloatingElements />
 
