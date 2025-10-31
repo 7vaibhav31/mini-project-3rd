@@ -252,7 +252,7 @@ export function WorkflowModal({
 
           {/* Details */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-foreground mb-6">
+            <h3 className="text-xl font-bold text-white drop-shadow-md mb-6">
               Key Points:
             </h3>
             {step.details.map((detail, idx) => (
@@ -264,7 +264,7 @@ export function WorkflowModal({
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white font-bold text-sm">
                   {idx + 1}
                 </div>
-                <p className="text-foreground leading-relaxed flex-1">
+                <p className="text-white leading-relaxed flex-1 drop-shadow-sm">
                   {detail}
                 </p>
               </div>
@@ -272,8 +272,8 @@ export function WorkflowModal({
           </div>
 
           {/* Footer CTA */}
-          <div className="mt-8 p-6 rounded-xl bg-gradient-to-r from-secondary/10 to-accent/10 border border-accent/30">
-            <p className="text-muted-foreground mb-4">
+          <div className="mt-8 p-6 rounded-xl bg-gradient-to-r from-secondary/20 to-accent/20 border border-accent/50 backdrop-blur-sm">
+            <p className="text-white mb-4 drop-shadow-sm">
               This step is crucial for accurate trend detection and pattern
               recognition.
             </p>
