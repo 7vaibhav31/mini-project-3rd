@@ -31,6 +31,7 @@ export function RotatingGlobe() {
     const material = new THREE.MeshPhongMaterial({
       color: 0x1abcce,
       emissive: 0x1abcce,
+      emissiveIntensity: 0.8,
       wireframe: false,
       shininess: 100,
     });
@@ -43,8 +44,9 @@ export function RotatingGlobe() {
     const material2 = new THREE.MeshPhongMaterial({
       color: 0x3b82f6,
       emissive: 0x3b82f6,
+      emissiveIntensity: 1,
       wireframe: true,
-      opacity: 0.3,
+      opacity: 0.7,
       transparent: true,
     });
 
