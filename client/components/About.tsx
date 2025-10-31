@@ -53,7 +53,10 @@ export function About() {
     >
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-20 space-y-4 animate-fadeUp">
+        <div
+          className="text-center mb-20 space-y-4"
+          style={{ animation: "fadeUp 0.8s ease-out both" }}
+        >
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground">
             How TrendLoom <span className="text-accent">Works</span>
           </h2>
