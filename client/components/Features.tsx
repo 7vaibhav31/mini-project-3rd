@@ -76,8 +76,10 @@ export function Features() {
             return (
               <Card3D
                 key={index}
-                className="group animate-fadeUp"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="group"
+                style={{
+                  animation: `fadeUp 0.8s ease-out ${index * 100}ms both`,
+                }}
               >
                 <div className="relative p-8 rounded-2xl glass dark:glass-dark hover:shadow-lg transition-all duration-300 h-full border-gradient flex flex-col">
                   {/* Icon Container */}
