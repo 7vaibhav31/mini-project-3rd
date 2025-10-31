@@ -55,7 +55,10 @@ export function Team() {
     >
       <div className="container mx-auto px-4 max-w-6xl">
         {/* Section Header */}
-        <div className="text-center mb-20 space-y-4 animate-fadeUp">
+        <div
+          className="text-center mb-20 space-y-4"
+          style={{ animation: "fadeUp 0.8s ease-out both" }}
+        >
           <h2 className="text-4xl md:text-5xl font-bold font-heading text-foreground">
             Meet the <span className="text-accent">Team Behind TrendLoom</span>
           </h2>
@@ -70,8 +73,10 @@ export function Team() {
           {teamMembers.map((member, index) => (
             <Card3D
               key={index}
-              className="group animate-fadeUp"
-              style={{ animationDelay: `${index * 100}ms` }}
+              className="group"
+              style={{
+                animation: `fadeUp 0.8s ease-out ${index * 100}ms both`,
+              }}
             >
               <div className="relative p-8 rounded-2xl glass dark:glass-dark hover:shadow-lg transition-all duration-300 border-gradient h-full flex flex-col items-center text-center space-y-4">
                 {/* Profile Photo Placeholder */}

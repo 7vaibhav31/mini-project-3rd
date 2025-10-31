@@ -258,8 +258,10 @@ export function WorkflowModal({
             {step.details.map((detail, idx) => (
               <div
                 key={idx}
-                className="flex gap-4 p-4 rounded-lg bg-white/5 dark:bg-black/20 border border-border hover:border-accent/50 transition-all duration-300 animate-fadeUp"
-                style={{ animationDelay: `${idx * 100}ms` }}
+                className="flex gap-4 p-4 rounded-lg bg-white/5 dark:bg-black/20 border border-border hover:border-accent/50 transition-all duration-300"
+                style={{
+                  animation: `fadeUp 0.8s ease-out ${idx * 100}ms both`,
+                }}
               >
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-gradient-to-br from-secondary to-accent flex items-center justify-center text-white font-bold text-sm">
                   {idx + 1}

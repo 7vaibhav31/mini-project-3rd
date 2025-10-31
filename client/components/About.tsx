@@ -70,8 +70,10 @@ export function About() {
             return (
               <Card3D
                 key={index}
-                className="group relative animate-fadeUp cursor-pointer"
-                style={{ animationDelay: `${index * 100}ms` }}
+                className="group relative cursor-pointer"
+                style={{
+                  animation: `fadeUp 0.8s ease-out ${index * 100}ms both`,
+                }}
               >
                 {/* Card */}
                 <div

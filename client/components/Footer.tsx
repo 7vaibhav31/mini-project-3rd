@@ -10,7 +10,7 @@ export function Footer() {
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* Contact Section */}
-          <div className="animate-fadeUp">
+          <div style={{ animation: "fadeUp 0.8s ease-out both" }}>
             <h3 className="text-lg font-bold font-heading text-foreground mb-6">Contact</h3>
             <div className="space-y-4">
               <a
@@ -31,7 +31,7 @@ export function Footer() {
           </div>
 
           {/* Links Section */}
-          <div className="animate-fadeUp" style={{ animationDelay: "100ms" }}>
+          <div style={{ animation: "fadeUp 0.8s ease-out 100ms both" }}>
             <h3 className="text-lg font-bold font-heading text-foreground mb-6">Links</h3>
             <ul className="space-y-3">
               {[
@@ -57,7 +57,7 @@ export function Footer() {
           </div>
 
           {/* Institution & Social Section */}
-          <div className="animate-fadeUp" style={{ animationDelay: "200ms" }}>
+          <div style={{ animation: "fadeUp 0.8s ease-out 200ms both" }}>
             <h3 className="text-lg font-bold font-heading text-foreground mb-6">Organization</h3>
             <p className="text-muted-foreground text-sm mb-4">
               <span className="font-medium text-foreground">IMS Engineering College</span>
