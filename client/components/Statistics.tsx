@@ -104,8 +104,10 @@ export function Statistics() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="relative p-8 rounded-2xl glass dark:glass-dark border-gradient animate-fadeUp hover:shadow-lg transition-all duration-300"
-              style={{ animationDelay: `${index * 150}ms` }}
+              className="relative p-8 rounded-2xl glass dark:glass-dark border-gradient hover:shadow-lg transition-all duration-300"
+              style={{
+                animation: `fadeUp 0.8s ease-out ${index * 150}ms both`,
+              }}
             >
               {/* Glow effect on hover */}
               <div className="absolute inset-0 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300 bg-gradient-to-br from-accent/20 to-secondary/20" />
