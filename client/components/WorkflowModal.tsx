@@ -218,10 +218,11 @@ export function WorkflowModal({
           transition: "transform 0.3s ease-out",
         }}
       >
-        {/* 3D Canvas Background */}
+        {/* 3D Canvas Background with overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-background/95 to-background/90 pointer-events-none" />
         <div
           ref={canvasRef}
-          className="absolute inset-0 opacity-30 pointer-events-none"
+          className="absolute inset-0 opacity-20 pointer-events-none"
         />
 
         {/* Content */}
@@ -240,12 +241,12 @@ export function WorkflowModal({
           </div>
 
           {/* Title */}
-          <h2 className="text-4xl font-bold font-heading text-foreground mb-2 animate-fadeUp">
+          <h2 className="text-4xl font-bold font-heading text-white drop-shadow-lg mb-2 animate-fadeUp">
             {step.title}
           </h2>
 
           {/* Description */}
-          <p className="text-lg text-accent font-medium mb-8 animate-fadeUp">
+          <p className="text-lg text-cyan-300 font-medium mb-8 animate-fadeUp drop-shadow-md">
             {step.description}
           </p>
 
