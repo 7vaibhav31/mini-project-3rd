@@ -1,26 +1,49 @@
 import { Github, Linkedin } from "lucide-react";
 import { Card3D } from "./Card3D";
 
+// SOCIAL MEDIA LINKS CONFIGURATION
+// =====================================
+// Add your LinkedIn and GitHub URLs below for each team member
+// LinkedIn URL format: https://linkedin.com/in/your-profile
+// GitHub URL format: https://github.com/your-username
+// =====================================
+
 const teamMembers = [
   {
     name: "Vaibhav Sharma",
     role: "Full Stack Developer",
     initials: "VS",
+    // PASTE VAIBHAV'S LINKEDIN URL HERE:
+    linkedinUrl: "#",
+    // PASTE VAIBHAV'S GITHUB URL HERE:
+    githubUrl: "#",
   },
   {
     name: "Sourabh Saxena",
     role: "Data Analyst",
     initials: "SS",
+    // PASTE SOURABH'S LINKEDIN URL HERE:
+    linkedinUrl: "#",
+    // PASTE SOURABH'S GITHUB URL HERE:
+    githubUrl: "#",
   },
   {
     name: "Kumar Bhaskar",
     role: "AI Engineer",
     initials: "KB",
+    // PASTE KUMAR'S LINKEDIN URL HERE:
+    linkedinUrl: "#",
+    // PASTE KUMAR'S GITHUB URL HERE:
+    githubUrl: "#",
   },
   {
     name: "Jatin Gound",
     role: "ML Specialist",
     initials: "JG",
+    // PASTE JATIN'S LINKEDIN URL HERE:
+    linkedinUrl: "#",
+    // PASTE JATIN'S GITHUB URL HERE:
+    githubUrl: "#",
   },
 ];
 
@@ -70,13 +93,36 @@ export function Team() {
                 </div>
 
                 {/* Social Links */}
-                <div className="flex gap-3 pt-4">
-                  <button className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-accent/20 text-muted-foreground hover:text-accent transition-colors duration-200">
+                {/*
+                  SOCIAL MEDIA LINKS SECTION
+                  Update the linkedinUrl and githubUrl in the teamMembers array above
+                  to add clickable links to each team member's profile
+                  Replace "#" with actual LinkedIn and GitHub URLs
+                */}
+                <div className="flex gap-3 pt-6">
+                  {/* LinkedIn Link */}
+                  {/* Update linkedinUrl value above to make this clickable */}
+                  <a
+                    href={member.linkedinUrl}
+                    target={member.linkedinUrl !== "#" ? "_blank" : undefined}
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-accent/20 text-muted-foreground hover:text-accent transition-colors duration-200"
+                    aria-label={`${member.name} LinkedIn`}
+                  >
                     <Linkedin className="w-5 h-5" />
-                  </button>
-                  <button className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-accent/20 text-muted-foreground hover:text-accent transition-colors duration-200">
+                  </a>
+
+                  {/* GitHub Link */}
+                  {/* Update githubUrl value above to make this clickable */}
+                  <a
+                    href={member.githubUrl}
+                    target={member.githubUrl !== "#" ? "_blank" : undefined}
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-muted hover:bg-accent/20 text-muted-foreground hover:text-accent transition-colors duration-200"
+                    aria-label={`${member.name} GitHub`}
+                  >
                     <Github className="w-5 h-5" />
-                  </button>
+                  </a>
                 </div>
               </div>
             </Card3D>
