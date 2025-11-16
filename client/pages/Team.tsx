@@ -37,6 +37,7 @@ const teamMembers = [
     name: "Jatin Gound",
     role: "UNKOWN",
     initials: "JG",
+    photo: "https://i.ibb.co/d02R9KkT/image.jpg",
     linkedinUrl: "#",
     githubUrl: "#",
   },
